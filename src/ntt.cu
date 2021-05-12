@@ -126,7 +126,7 @@ void cuda_ntt_parallel(uint64_t* res,uint64_t batchSize,uint64_t n,uint64_t p,ui
     if(bpg>256)
 	  bpg=256;
 
-    cout<<"bpg: "<<bpg<<endl;
+//    cout<<"bpg: "<<bpg<<endl;
     
     dim3 dimGrid(bpg,1,1) ;
     dim3 dimBlock(tpb,1,1) ;
